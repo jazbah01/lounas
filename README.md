@@ -12,7 +12,7 @@ Sovellus käynnistyy osoitteeseen [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
 ## Ravintoloiden muokkaus
 
-Lisää tai poista ravintoloita tiedostosta `/Users/janne.puistovirta/hamk/lounas/config/restaurants.mjs`.
+Lisää tai poista ravintoloita tiedostosta `/lounas/config/restaurants.mjs`.
 
 Jokaisella ravintolalla on:
 
@@ -21,7 +21,7 @@ Jokaisella ravintolalla on:
 - `url`
 - `parser`
 
-Jos lisäät kokonaan uuden sivulähteen, sille pitää lisätä myös parseri tiedostoon `/Users/janne.puistovirta/hamk/lounas/lib/lunch-service.mjs`.
+Jos lisäät kokonaan uuden sivulähteen, sille pitää lisätä myös parseri tiedostoon `/lounas/lib/lunch-service.mjs`.
 
 ## Huomioita
 
