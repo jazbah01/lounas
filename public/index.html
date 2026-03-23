@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lounaat tänään</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Tampereen lähilounaat</p>
+        <h1>Lounaat tänään</h1>
+        <p class="hero-date" id="date-label">Ladataan päivämäärää...</p>
+      </header>
+
+      <main>
+        <section class="status" id="status">Haetaan lounaslistoja...</section>
+        <section class="cards" id="cards" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <template id="card-template">
+      <article class="card">
+        <div class="card-head">
+          <div>
+            <h2 class="restaurant-name"></h2>
+            <a class="restaurant-link" target="_blank" rel="noreferrer">Avaa ravintolan sivu</a>
+          </div>
+          <span class="badge"></span>
+        </div>
+        <ul class="menu-list"></ul>
+        <p class="error-text" hidden></p>
+      </article>
+    </template>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
