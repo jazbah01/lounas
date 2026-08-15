@@ -1,0 +1,3 @@
+http://lounas.koti {
+    reverse_proxy lounas:3000
+}
