@@ -18,15 +18,15 @@ services:
       - lounas
 
   adguard:
-  image: adguard/adguardhome:latest
-  restart: unless-stopped
-  ports:
-    - "53:53/tcp"
-    - "53:53/udp"
-    - "3001:80/tcp"
-  volumes:
-    - adguard_work:/opt/adguardhome/work
-    - adguard_conf:/opt/adguardhome/conf
+    image: adguard/adguardhome:latest
+    restart: unless-stopped
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "3001:80/tcp"
+    volumes:
+      - adguard_work:/opt/adguardhome/work
+      - adguard_conf:/opt/adguardhome/conf
 
 volumes:
   caddy_data:
