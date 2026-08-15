@@ -2,5 +2,21 @@ services:
   lounas:
     build: .
     restart: unless-stopped
+    expose:
+      - "3000"
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "80:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - lounas
+
+volumes:
+  caddy_data:
+  caddy_config:
