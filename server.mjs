@@ -4,7 +4,7 @@ import { extname, join, normalize } from "node:path";
 
 import { getLunchData } from "./lib/lunch-service.mjs";
 
-const host = "127.0.0.1";
+const host = "0.0.0.0";
 const port = Number(process.env.PORT || 3000);
 const publicDir = join(process.cwd(), "public");
 
