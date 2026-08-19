@@ -18,10 +18,12 @@ export const restaurants = [
     parser: "stahlberg"
   },
   {
-    id: "ravintola-aleksis",
-    name: "Ravintola Aleksis",
-    url: "https://ravintola-aleksis.fi/lounas/",
-    parser: "aleksis"
+    id: "min-maku-yliopistonrinne",
+    name: "MIN Maku Yliopistonrinne",
+    url: "https://mealdoo.com/fi/week/linkosuo/maku/ruokalista",
+    sourceUrl: "https://api.fi.poweresta.com/publicmenu/dates/linkosuo/maku/",
+    menu: "ruokalista",
+    parser: "mealdoo"
   },
   {
     id: "zafran",
